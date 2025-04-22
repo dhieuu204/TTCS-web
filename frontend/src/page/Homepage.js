@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 import Banner from '../components/Banner';
 // Các component sau sẽ thêm dần vào:
 import '../css/Homepage.css';
@@ -7,12 +7,10 @@ import '../css/Homepage.css';
 const Homepage = () => {
   return (
     <div className="homepage">
-      <Navbar />
+      <Header />
       <Banner />
       {/* Banner sẽ thêm sau */}
-      <section className="homepage__banner">
-        <div className="homepage__banner-placeholder">Banner quảng cáo chính</div>
-      </section>
+      
 
       <section className="homepage__flash-sale">
         <h2 className="homepage__section-title">Flash Sales</h2>

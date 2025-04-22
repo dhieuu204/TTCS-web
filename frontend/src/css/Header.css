@@ -1,0 +1,103 @@
+/* Reset lại header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  background-color: #e8bdbd;
+  font-family: sans-serif;
+}
+
+/* Logo bên trái */
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b04242;
+  margin-right: 40px;
+}
+
+/* Wrapper cho menu + search + icons */
+.header__center {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: center;
+}
+
+/* Menu */
+.header__menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-item {
+  cursor: pointer;
+  font-weight: 500;
+  color: #000;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.header__menu-item:first-child {
+  text-decoration: underline;
+}
+
+.header__menu-item:hover {
+  color: #e74c3c;
+}
+
+/* Thanh gạch dọc chia */
+.header__divider {
+  width: 1px;
+  height: 24px;
+  background-image: linear-gradient(#007aff 33%, rgba(255, 255, 255, 0) 0%);
+  background-size: 2px 8px;
+  background-repeat: repeat-y;
+  margin: 0 32px;
+}
+
+/* Search box */
+.header__search {
+  position: relative;
+  width: 250px;
+}
+
+.header__search-input {
+  width: 100%;
+  padding: 8px 36px 8px 12px;
+  background-color: #f4f4f4;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.header__search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #666;
+}
+
+/* Icons bên phải */
+.header__icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 32px;
+}
+
+.header__icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s;
+  color: #000;
+}
+
+.header__icon:hover {
+  color: #e74c3c;
+}

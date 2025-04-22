@@ -1,86 +1,50 @@
 .banner {
-    width: 100%;
-    position: relative;
-  }
-  
-  .banner__image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .banner__swiper {
-    width: 100%;
-    height: 400px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .banner__slide {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 40px;
-    background-color: #000;
-    color: #fff;
-  }
-  
-  .banner__content {
-    max-width: 50%;
-  }
-  
-  .banner__logo {
-    width: 40px;
-    margin-bottom: 10px;
-  }
-  
-  .banner__subtitle {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .banner__title {
-    font-size: 40px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  .banner__button {
-    padding: 10px 20px;
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.3s;
-  }
-  
-  .banner__button:hover {
-    background: white;
-    color: black;
-  }
-  
-  .banner__image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .banner__image-item {
-    max-width: 400px;
-    height: auto;
-  }
-  
-  /* Swiper pagination bullets */
-  .swiper-pagination-bullet {
-    background: white;
-    opacity: 0.5;
-  }
-  
-  .swiper-pagination-bullet-active {
-    background: red;
-    opacity: 1;
-  }
-  
+  width: 100%;
+  margin-top: 20px;
+}
+
+.banner__container {
+  display: flex;
+  align-items: flex-start; /* hoặc thử center nếu muốn căn giữa theo chiều dọc */
+  gap: 20px;
+  height: auto; 
+}
+
+.banner__sidebar {
+  width: 15%; 
+  border-right: 1px solid #e0e0e0;
+}
+
+.banner__category-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.banner__category-item {
+  padding: 12px 0;
+  cursor: pointer;
+  font-weight: 500;
+  border-bottom: 1px solid #f0f0f0;
+  transition: color 0.3s;
+}
+
+.banner__category-item:hover {
+  color: #e74c3c;
+}
+
+.banner__slider {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* căn giữa ảnh trong phần slider */
+  width: 85%;
+  height: 100%;
+}
+
+.banner__image {
+  height: 100%;
+  max-height: 450px; 
+  width: auto;
+  object-fit: cover;
+  display: block;
+}
